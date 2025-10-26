@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linked List Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">
+      <img src="img/11443167.png" width="60" height="60" alt="PlayGround" class="class-logo" />
+      <h2 id="heading">PlayGround</h2>
+    </a>
+  </nav>
+
+  <!-- Main container -->
+  <main class="container">
+    <div class="content">
+      
+      <!-- LEFT: Operations -->
+      <div class="left">
+        <h2>Linked List Operations</h2>
+        <div class="operations">
+          <input type="text" id="inputValue" placeholder="Enter Value" />
+
+          <div class="btn-group">
+            <button class="button" onclick="insertAtEnd()">Insert</button>
+            <button class="button" onclick="deleteNode()">Delete</button>
+            <button  class="button" onclick="searchNode()">Search</button>
+            <button class="button" onclick="traverse()">Traverse</button>
+          </div>
+        </div>
+        <p id="statusMsg"></p>
+      </div>
+
+      <!-- RIGHT: Visualization -->
+      <div class="right">
+        <h2>Visualization</h2>
+        <div id="visualizer" class="visualizer"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
